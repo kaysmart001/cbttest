@@ -3,10 +3,10 @@
 @session_start();
 //start the session
 
-const serverName="localhost";
-const password="";
-const database="test_cbt";
-const username="root";
+const serverName="sql311.epizy.com";
+const password="hvZgW4p2guu7";
+const database="epiz_33459705_cbttest_db";
+const username="epiz_33459705";
 const serverMethod="POST";
 $conn=mysqli_connect(serverName,username,password,database);
 
