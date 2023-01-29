@@ -1,4 +1,36 @@
-INSERT INTO Users (User_Name,Password) VALUES ("EMMANUEL","ADMIN");
+CREATE TABLE Users
+(
+
+
+
+
+ U_ID INT NOT NULL AUTO_INCREMENT,
+
+  
+ ID INT NOT NULL,
+
+ user_name VARCHAR (255) NOT NULL,
+
+ password VARCHAR  (255) NOT NULL,
+
+ email VARCHAR (255) NOT NULL,
+
+ birthday VARCHAR (255) NOT NULL,
+
+ sex VARCHAR (10) NOT NULL,
+
+ comment VARCHAR(255) NOT NULL,
+
+ home_address VARCHAR (255) NOT NULL,
+
+ profile_picture VARCHAR (255) NOT NULL,
+ PRIMARY KEY(U_ID),
+
+ FOREIGN KEY (ID) REFERENCES users(ID)
+
+);
+ 
+ INSERT INTO Users (User_name,password) VALUES ("EMMANUEL","ADMIN");
 
 
 
